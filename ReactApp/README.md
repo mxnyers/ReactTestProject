@@ -1,2 +1,2 @@
 # ReactTestProject
-# View
+# React App
