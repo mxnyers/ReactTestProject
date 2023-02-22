@@ -1,2 +1,0 @@
-# ReactTestProject
-# View
