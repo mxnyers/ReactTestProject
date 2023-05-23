@@ -1,3 +1,14 @@
+# Getting started
+## react-app
+### NPM Installation
+1. Go to https://nodejs.org/en/download and download the installer that is best for your OS.
+2. Run the installler and follow the installation wizard steps.
+3. Type in the command "npm install" within the react-app folder this should install the necessary node_modules you are missing.
+    1. Note: there will be some vulnerabilities in the package install the innitial creator of the create react app functionality explains that they can be ignored. https://overreacted.io/npm-audit-broken-by-design/
+    2. Sometimes there will be more than 6 high severity vulnerabilities, if there are run the command "npm audit fix" and it will run a fix on your packages to ensure everything is up date.
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
