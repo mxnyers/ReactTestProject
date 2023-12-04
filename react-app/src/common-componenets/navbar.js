@@ -5,7 +5,7 @@ class Navbar extends Component {
     return (
       <div className="navbar">
         <a href="/">Home</a>
-        <a href="/users">Users</a>
+        <a href="/sad-playlists">Sad Playlists</a>
         <a href="#" className="right">Contact</a>
       </div>
     );
