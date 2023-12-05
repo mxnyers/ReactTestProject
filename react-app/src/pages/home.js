@@ -4,7 +4,7 @@ class Home extends Component {
     render() {
         return (
             <div>
-              <h1>Welcome to the home screen</h1>
+              <h1>Welcome to the Playlist Pitcher Tool</h1>
             </div>
           );
         };

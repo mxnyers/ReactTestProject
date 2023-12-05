@@ -1,5 +1,6 @@
 
 import React, { Component } from 'react';
+import DataTable from 'react-data-table-component'
 
 class SadPlaylists extends Component {
   constructor(props) {
@@ -23,6 +24,25 @@ class SadPlaylists extends Component {
 
   render() {
     var { isLoaded, items } = this.state;
+    const columns = [
+      {
+        name: "Playlist Name",
+        selector: row => row.playlist_name
+      },
+      {
+        name: "Email",
+        selector: row => row.placement_email
+      },
+      {
+        name: "Social Media",
+        selector: row => row.social_media
+      },
+      {
+        name: "Approved Song",
+        selector: row => row.approved_song
+      }
+
+    ]
 
     if (!isLoaded) {
       return <div>Loading...</div>;
@@ -31,13 +51,14 @@ class SadPlaylists extends Component {
     else {
       return (
         <div className="App">
-          <ul>
+          {/* <ul>
             {items.map(item => (
               <li key={item.id}>
                 Playlist Name: {item.playlist_name} | Contact: {item.email} {item.social_media}   
               </li>
             ))}
-          </ul>
+          </ul> */}
+          <DataTable columns={columns} data={items} selectableRows />;
         </div>
       );
     };
