@@ -27,7 +27,8 @@ class SadPlaylists extends Component {
     const columns = [
       {
         name: "Playlist Name",
-        selector: row => row.playlist_name
+        selector: row => row.playlist_name,
+        sortable: true
       },
       {
         name: "Email",
@@ -50,15 +51,13 @@ class SadPlaylists extends Component {
 
     else {
       return (
-        <div className="App">
-          {/* <ul>
-            {items.map(item => (
-              <li key={item.id}>
-                Playlist Name: {item.playlist_name} | Contact: {item.email} {item.social_media}   
-              </li>
-            ))}
-          </ul> */}
-          <DataTable columns={columns} data={items} selectableRows />;
+        <div className="playlist-table">
+          <DataTable 
+            columns={columns} 
+            data={items} 
+            selectableRows
+            fixedHeader
+            />
         </div>
       );
     };

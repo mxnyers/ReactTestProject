@@ -6,11 +6,23 @@
 body {
   font-family: Arial, Helvetica, sans-serif;
   margin: 0;
+  overflow: hidden;
+  overflow-y:  hidden;
+  height: 100%;
 }
 
-/* .App {
-  text-align: center;
-} */
+#root {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /*The default height should be 100% of view port*/
+}
+
+.app {
+  flex: 1;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 20px;
+}
 
 /* Increase the font size of the heading */
 .header h1 {
@@ -21,35 +33,100 @@ body {
 .navbar {
   overflow: hidden;
   background-color: #333;
+  display: flex;
+  height: 65px;
 }
  
 /* Style the navigation bar links */
 .navbar a {
   float: left;
-  display: block;
+  display: flex;
   color: white;
-  text-align: center;
+  align-items: center;
+  justify-content: center;
   padding: 14px 20px;
   text-decoration: none;
 }
  
 /* Right-aligned link */
 .navbar a.right {
-  float: right;
+  margin-left: auto;
 }
  
 /* Change color on hover */
-.navbar a:hover {
+.navbar a:hover, .playlist-dropdown:hover .dropbtn{
   background-color: #ddd;
   color: black;
 }
- 
+
+/* navbar logo image */
+.navbar img {
+  object-fit: contain;
+  width: 100%;
+  height: 100%;
+}
+
 /* Column container */
 .row {  
   display: -ms-flexbox; /* IE10 */
   display: flex;
   -ms-flex-wrap: wrap; /* IE10 */
   flex-wrap: wrap;
+}
+
+/* The dropdown container */
+.playlist-dropdown {
+  float: left;
+  overflow: hidden;
+  display: flex;
+}
+
+/* Dropdown button */
+.playlist-dropdown .dropbtn {
+  font-size: 16px;
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit; /* Important for vertical align on mobile phones */
+  margin: 0; /* Important for vertical align on mobile phones */
+}
+
+/* Dropdown content (hidden by default) */
+.playlist-submenu {
+  display: none;
+  position: absolute;
+  margin-top: 65px;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 2;
+}
+
+/* Links inside the dropdown */
+.playlist-submenu a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+/* Add a grey background color to dropdown links on hover */
+.playlist-submenu a:hover {
+  background-color: #ddd;
+}
+
+/* Show the dropdown menu on hover */
+.playlist-dropdown:hover .playlist-submenu {
+  display: block;
+}
+
+.FaCaretDown {
+  padding-left: 3px;
+  padding-top: 3px;
 }
  
 /* Create two unequal columns that sits next to each other */
@@ -68,19 +145,56 @@ body {
   background-color: white;
   padding: 20px;
 }
- 
-/* Fake image, just for this example */
-.fakeimg {
-  background-color: #aaa;
+
+/* Playlist Table Styling */
+.playlist-table {
+  display: flex;
+  flex-direction: column;
+  max-height: 75vh;
+  border: 3px solid black;
+  border-radius: 3px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  max-height: 75vh;
+}
+
+.add-playlist-form .row label{
+  margin-bottom: 5px;
+}
+
+.general-playlist-info{
+  display: flex;
+  flex-direction: column;
+  border: 3px solid black;
+  border-radius: 3px;
+  margin-bottom: 5px;
+}
+
+.controller-container{
+  flex: 1;
+  padding: 10px;
+}
+.controller-container div{
   width: 100%;
-  padding: 20px;
+}
+
+.button-container {
+  display: flex;
+  flex-flow: row-reverse;
+} 
+
+input[type="submit"] {
+  border: 3px solid black;
+  background: none;
+  font-size: large;
 }
  
 /* Footer */
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
+  margin-top: auto;
   width: 100%;
   text-align: center;
   padding: 20px;
