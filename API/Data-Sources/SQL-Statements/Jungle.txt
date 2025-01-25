@@ -1,0 +1,46 @@
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='jungle' AND xtype='U')
+            CREATE TABLE jungle (
+				id int NOT NULL,
+				playist_name varchar(255),
+				placement_email varchar(255),
+				social_media varchar(255),
+				notes varchar(255),
+				approved_song varchar(255),
+				payment varchar(255),
+				cost varchar(255),
+				duration_days varchar(255),
+				listeners_during_duration varchar(255),
+				streams_during_duration varchar(255),
+				genre_id int,
+				PRIMARY KEY (id)
+)
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('0', 'blue lock (dotarap + phonk + hyperpop)', '', '@MadAboutThat', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('1', 'jungle / breakcore / dnb', '', '@cpeto59 (twitter)', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('2', 'LIQUID DNB', '', '@owengriff_', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('3', 'Liquid Drum & Bass | Chill DnB | Melodic Drum n Bass 2023', '', '@peterlixmusic', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('4', 'chill breakcore', '', '@chillbreakcore', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('5', 'SIGMA GYM MOTIVATION', 'mufasa.spotifyplaylist@gmail.com', '', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('6', 'BREAKCORE ABYSS', '', '@breakcore.abyss', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('7', 'The Lost Soul Down/vibes', '', '@starxedy', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('8', 'Breakcore | PS2 Racing Vibes', '', '@mayowithadot', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('9', 'Just Dance BBM', '', '@Lucagotbbm', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('10', 'Atmospheric Breakcore / DnB', '', '@gionikva discord', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('11', 'Etheral Breakcore Jungle/DnB', '', '@joe.parky', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('12', 'ethereal://rave', '', '@purity_filter', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('13', 'keygencore', '', '@ysfwtbob or @edwinaxelitoo', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('14', 'Breakcore // Jungle // Brekabeat', '', '@psychoarcadia', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('15', 'Breakcore Heaven', '', '@breakcoreheaven', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('16', 'Breakcore / DnB', '', '@memesbreakcore', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('17', 'CHILL JUNGLE/ATMOSPHERIC DNB', '', '@Zelyr#0001 discord', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('18', '404 Error', '', '@vlad.qll', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('19', 'Breakcore/DnB', '', '@memesbreakcore', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('20', 'Me Gusta Lo Raro', '', '@flama.amour or @___dibuu', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('21', 'breakcore dump (to chill and study to?)', '', '@slamflash_', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('22', 'PS1 Vibes [Drum & Bass/House]', '', '@zachperard', 'Submit what you on as well', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('23', 'Breakcore and such', '', '@Jvnepill', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('24', 'Geek''d Up', '', '@woopieluncheon', '', '', '', '', '', '', '', '4')
+INSERT INTO jungle (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('25', 'Internet Archives', '', '@blackhearts_k3', '', '', '', '', '', '', '', '4')
+
+ALTER TABLE jungle
+ADD FOREIGN KEY (genre_id)
+REFERENCES playlist_genres(id)

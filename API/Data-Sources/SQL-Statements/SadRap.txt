@@ -1,0 +1,68 @@
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='sad_rap' AND xtype='U')
+            CREATE TABLE sad_rap (
+				id int NOT NULL,
+				playlist_name varchar(255),
+				placement_email varchar(255),
+				social_media varchar(255),
+				notes varchar(255),
+				approved_song varchar(255),
+				payment varchar(255),
+				cost varchar(255),
+				duration varchar(255),
+				listeners_during_duration varchar(255),
+				streams_during_duration varchar(255),
+				genre_id int,
+				PRIMARY KEY (id)
+)
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('0', 'Sad Emo Pop Rap 	', 'tophitsplaylist2021@gmail.com', '', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('1', 'Sad Vibes', '', '@iamxinclair', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('2', 'Sad Trap 2023', '', '@Sad.trap2023', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('3', 'Sad Rap </3', '', '@1503recording', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('4', 'EMO TRAP <3', '', '@livininlimbo', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('5', 'SAD TRAP </3 xxx, peep, juice, tracy and more', '', '@lsqql', 'loveishard only', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('6', 'Sad Songs :(', '', '@spoti.nath', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('7', 'sad songs for my depression </3', '', '@oryl_music', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('8', 'lonely nights at 3am', '', '@chilledsad_yt', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('9', 'sad songs to cry to', '', '@chilledsad_yt', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('10', 'Depressed Rap Songs', '', '@nlsstudio or @nilsmusiclab', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('11', 'FUCK PEOPLE, FUCK LIFE, FUCK EVERYTHING', '', '@_bieltxo_', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('12', 'in the feels :/', '', '@ethanroberts._', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('13', 'Depression Slowly Killing Me', '', '@noah_gable_gamer', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('14', 'EMOTIONAL HIP HOP HITS', '', '@403_kyle', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('15', 'Cigs Inside', '', '@cmdefranco', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('16', 'Sad Playlist', 'abinanti93@gmail.com', '', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('17', 'Gym Sad', ' ', '@eu_zollim', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('18', 'Lyrical Lemonade', '', '@7onnyy', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('19', 'Depressing Rap', '', '', 'https://www.ispytunes.com/welcome', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('20', 'Sad Rap', 'PromotingSoundsSpotify@gmail.com', '', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('21', 'Emo Rap', 'PromotingSoundsSpotify@gmail.com', '', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('22', 'Sad songs playlist that will make you cry', 'PromotingSoundsSpotify@gmail.com', '', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('23', 'Sad songs for tough times', 'PromotingSoundsSpotify@gmail.com', '', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('24', 'Lean''s Gone Cold (Stan Remix) - Rae Sremmurd', '', '@chris.trush', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('25', 'Gym Sad', '', '@eu_zollim', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('26', 'Stoned Vibes', '', '@stonedvibesplaylist', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('27', 'sad songs for the boys', 'lyricalmindsubmit@gmail.com', '', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('28', 'SAD TRAP', '', '@lsqql', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('29', 'Rap Convention', 'cal2kryptic@gmail.com', '', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('30', 'Courtesy Yasuo | playlist', '', '@f6lps', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('31', 'Sad Vibes', 'lofinetic@gmail.com', '', '(lofi)', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('32', 'Sad Rap Vibes', 'maximumplaylists6@gmail.com', '', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('33', 'late night vibes', 'venturoussubmit@gmail.com', '', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('34', 'Chill Rap Hits', '', '@ blackhearts_k3', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('35', 'lonely ache', '', '@favoritemutuals', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('36', 'Melancholia', '', '', 'sbmt.to/weitblick-records', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('37', 'depressed af', '', '@cleanincorporated', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('38', 'DYRACHYO PLAYLIST', '', '@dyrachyopr', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('39', 'SAD MIX - THE BEST SAD MIX', '', '@vlone.jero', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('40', 'Sad Training Sessions', '', '@thecoltlee', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('41', 'Late Night Gaming Vibes', 'drakewesten173@gmail.com', '', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('42', 'Sad Rap', '', '@woopieluncheon ', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('43', 'Sad Songs For The Boys', '', '@max.zoetendaal', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('44', 'Sad Boi Hours', '', '@drew.220', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('45', 'PAIN', '', '@Dongarang', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('46', 'Underground/Sad Rap', '', '@johannesgenger', '', '', '', '', '', '', '', '6')
+INSERT INTO sad_rap (id,playlist_name,placement_email,social_media,notes,approved_song,payment,cost,duration,listeners_during_duration,streams_during_duration,genre_id) VALUES ('47', 'Sad Rap ftb', '', '@TheBoysFeelsToo_tiktok', '', '', '', '', '', '', '', '6')
+
+ALTER TABLE sad_rap
+ADD FOREIGN KEY (genre_id)
+REFERENCES playlist_genres(id)

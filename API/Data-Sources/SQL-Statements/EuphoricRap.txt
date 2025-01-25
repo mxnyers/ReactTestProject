@@ -1,0 +1,48 @@
+IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='euphoric_rap' AND xtype='U')
+            CREATE TABLE euphoric_rap (
+				id int NOT NULL,
+				playist_name varchar(255),
+				placement_email varchar(255),
+				social_media varchar(255),
+				notes varchar(255),
+				approved_song bit,
+				payment bit,
+				cost varchar(255),
+				duration_days real,
+				listeners_during_duration varchar(255),
+				streams_during_duration varchar(255),
+				genre_id int,
+				PRIMARY KEY (id)
+)
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('0', 'Ice Caviar', 'cooper@promotionlabel.com', '', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('1', 'New Era Artists', '', '@Your_own_Music', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('2', 'baby be my bubble gum', '', '@khioeuh', 'doesn''t do promo suggest only a few', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('3', 'Online Bangerz', '', '@Your_own_Music', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('4', 'WEED PLAYLIST 2023', '', '', 'submithub: https://www.submithub.com/playlister/hype-ur-track', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('5', '| fresh picks |', 'submit@cuteplaylists.com', '', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('6', 'experimental hip-hop', '', '@hug0_ruiz32', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('7', 'during blunt rotation', '', '@sykk.teki', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('8', 'aesthetic music', '', '@lunareclipsii', 'lofi vibes', 'False', 'False', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('9', 'vibey songs', '', '@joe.wilde', '', 'True', 'True', '$37', '30.0', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('10', '250 Perfect Songs', 'jahtalksmusic@gmail.com', '', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('11', 'Best of Aesthetic Rap', '', '', 'https://maskedmortal.com/', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('12', 'Cigs Inside', '', '@cmdefranco', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('13', 'Chill Rap Vibes', '', '@Owen.martell', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('14', 'EUPHORIA VIBES', '', '@_lydiawilson', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('15', 'Martoz Playlist ONE', '', '@launch13th', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('16', 'Dangerously In Love (772 Love Pt.2 ) - YNW Melly', '', '@niqfilms', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('17', 'Chill Rap Playlist', 'PromotingSoundsSpotify@gmail.com', '', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('18', 'Lean''s Gone Cold (Stan Remix) - Rae Sremmurd', '', '@chris.trush', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('19', 'chill sleeping rap lofi relax', 'musicplaylisting007@gmail.com', '', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('20', 'Stoned Vibes', '', '@stonedvibesplaylist', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('21', 'late night vibes', 'venturoussubmit@gmail.com', '', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('22', 'lofi songs / lofi english / slowed + reverb', '', '@yashrajjpatil', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('23', 'Chill Rap Hits', '', '@ blackhearts_k3', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('24', 'lonely ache', '', '@favoritemutuals', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('25', 'Late Night Gaming Vibes', 'drakewesten173@gmail.com', '', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('26', 'Fortnite/Gaming Montage Songs(All)', '', '@jensenheimann', '', '', '', '', '', '', '', '0')
+INSERT INTO euphoric_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('27', 'songs to smoke to', '', '@giulia.ayarova', '', '', '', '', '', '', '', '0')
+
+ALTER TABLE euphoric_rap
+ADD FOREIGN KEY (genre_id)
+REFERENCES playlist_genres(id)
