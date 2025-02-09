@@ -1,6 +1,6 @@
 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='party_rap' AND xtype='U')
             CREATE TABLE party_rap (
-				id int NOT NULL,
+				id int IDENTITY(0,1) PRIMARY KEY,
 				playist_name varchar(255),
 				placement_email varchar(255),
 				social_media varchar(255),
@@ -12,29 +12,28 @@ IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='party_rap' AND xtype='U')
 				listeners_during_duration varchar(255),
 				streams_during_duration varchar(255),
 				genre_id int,
-				PRIMARY KEY (id)
 )
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('0', 'Ice Caviar', 'cooper@promotionlabel.com', '', 'promotionlabel.com 10 day free trial for playlsiting', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('1', 'New Era Artists', '', '@Your_own_Music', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('2', 'Chill Rap Vibes', '', '@Owen.martell', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('3', 'EUPHORIA VIBES', '', '@_lydiawilson', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('4', 'Lyrical Lemonade', '', '@7onnyy', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('5', 'House Party', '', '@playlistkidd', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('6', 'TRAP INTERNACIONAL', 'djjorgem19@gmail.com', '', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('7', 'repostNG', '', '', 'https://repostng.com/', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('8', 'Faide''s Playlist', '', '@jystzn', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('9', 'Rocket League Grind Playlist', '', '@chris.trush', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('10', 'USA TRAP us', '', '@mariiocheco', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('11', 'High Vibes', '', '@private_dgc', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('12', 'Friday Vibes', '', '', 'https://www.artister.org/', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('13', 'Rap Workout', 'eternitynetwork34@gmail.com', '', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('14', 'GYM RATS', '', '@cristian.heg', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('15', 'Workout 2023 ', 'jensenheimann', '', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('16', 'Area Codes', '', '@wondersxblog', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('17', '@DIGITALTHRAX', '', '@DIGITALTHRAX', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('18', 'Lit songs', '', '@calvinndejesus', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('19', 'Trap Music', 'theplaylistkidd@gmail.com', '@playlistkidd', '', '', '', '', '', '', '', '5')
-INSERT INTO party_rap (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('20', 'Major Hits', 'pitch@theplaylistbros.com', '', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Ice Caviar', 'cooper@promotionlabel.com', '', 'promotionlabel.com 10 day free trial for playlsiting', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('New Era Artists', '', '@Your_own_Music', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Chill Rap Vibes', '', '@Owen.martell', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('EUPHORIA VIBES', '', '@_lydiawilson', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Lyrical Lemonade', '', '@7onnyy', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('House Party', '', '@playlistkidd', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('TRAP INTERNACIONAL', 'djjorgem19@gmail.com', '', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('repostNG', '', '', 'https://repostng.com/', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Faide''s Playlist', '', '@jystzn', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Rocket League Grind Playlist', '', '@chris.trush', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('USA TRAP us', '', '@mariiocheco', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('High Vibes', '', '@private_dgc', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Friday Vibes', '', '', 'https://www.artister.org/', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Rap Workout', 'eternitynetwork34@gmail.com', '', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('GYM RATS', '', '@cristian.heg', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Workout 2023 ', 'jensenheimann', '', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Area Codes', '', '@wondersxblog', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('@DIGITALTHRAX', '', '@DIGITALTHRAX', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Lit songs', '', '@calvinndejesus', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Trap Music', 'theplaylistkidd@gmail.com', '@playlistkidd', '', '', '', '', '', '', '', '5')
+INSERT INTO party_rap (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Major Hits', 'pitch@theplaylistbros.com', '', '', '', '', '', '', '', '', '5')
 
 ALTER TABLE party_rap
 ADD FOREIGN KEY (genre_id)

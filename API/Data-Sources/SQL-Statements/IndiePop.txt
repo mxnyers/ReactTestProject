@@ -1,6 +1,6 @@
 IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='indie_pop' AND xtype='U')
             CREATE TABLE indie_pop (
-				id int NOT NULL,
+				id int IDENTITY(0,1) PRIMARY KEY,
 				playist_name varchar(255),
 				placement_email varchar(255),
 				social_media varchar(255),
@@ -12,17 +12,16 @@ IF NOT EXISTS (SELECT * FROM sysobjects WHERE name='indie_pop' AND xtype='U')
 				listeners_during_duration varchar(255),
 				streams_during_duration varchar(255),
 				genre_id int,
-				PRIMARY KEY (id)
 )
-INSERT INTO indie_pop (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('0', 'Young & Free', 'submit@cuteplaylists.com', '', 'cheaper with cash app', 'True', 'True', '$25', '28.0', '', '', '3')
-INSERT INTO indie_pop (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('1', '| fresh picks |', 'submit@cuteplaylists.com', '', 'cheaper with cash app', 'True', 'True', '$25', '28.0', '', '', '3')
-INSERT INTO indie_pop (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('2', 'love songs for him. <3', '', '@s4ri.xx', '', '', '', '', '', '', '', '3')
-INSERT INTO indie_pop (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('3', 'indie 420 vibes', '', '@indiesonico', '', '', '', '', '', '', '', '3')
-INSERT INTO indie_pop (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('4', 'TAME IMPALA VIBES', '', '', 'https://open.spotify.com/track/1dIi2NJsSBTWaIrtDxuuFn?si=7659ce12ce554e92', '', '', '', '', '', '', '3')
-INSERT INTO indie_pop (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('5', 'Hey, es broma pero si quieres no es broma', '', '@memelistasmx', '', '', '', '', '', '', '', '3')
-INSERT INTO indie_pop (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('6', 'indie happy morning', '', '@vogue_my_dear_', '', '', '', '', '', '', '', '3')
-INSERT INTO indie_pop (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('7', 'lonely ache', '', '@favoritemutuals', '', '', '', '', '', '', '', '3')
-INSERT INTO indie_pop (id,playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('8', 'Solace Platlists', '', '', '$10 submission to a playlist https://ko-fi.com/solacerecords', '', '', '', '', '', '', '3')
+INSERT INTO indie_pop (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Young & Free', 'submit@cuteplaylists.com', '', 'cheaper with cash app', 'True', 'True', '$25', '28.0', '', '', '3')
+INSERT INTO indie_pop (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('| fresh picks |', 'submit@cuteplaylists.com', '', 'cheaper with cash app', 'True', 'True', '$25', '28.0', '', '', '3')
+INSERT INTO indie_pop (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('love songs for him. <3', '', '@s4ri.xx', '', '', '', '', '', '', '', '3')
+INSERT INTO indie_pop (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('indie 420 vibes', '', '@indiesonico', '', '', '', '', '', '', '', '3')
+INSERT INTO indie_pop (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('TAME IMPALA VIBES', '', '', 'https://open.spotify.com/track/1dIi2NJsSBTWaIrtDxuuFn?si=7659ce12ce554e92', '', '', '', '', '', '', '3')
+INSERT INTO indie_pop (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Hey, es broma pero si quieres no es broma', '', '@memelistasmx', '', '', '', '', '', '', '', '3')
+INSERT INTO indie_pop (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('indie happy morning', '', '@vogue_my_dear_', '', '', '', '', '', '', '', '3')
+INSERT INTO indie_pop (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('lonely ache', '', '@favoritemutuals', '', '', '', '', '', '', '', '3')
+INSERT INTO indie_pop (playist_name,placement_email,social_media,notes,approved_song,payment,cost,duration_days,listeners_during_duration,streams_during_duration,genre_id) VALUES ('Solace Platlists', '', '', '$10 submission to a playlist https://ko-fi.com/solacerecords', '', '', '', '', '', '', '3')
 
 ALTER TABLE indie_pop
 ADD FOREIGN KEY (genre_id)

@@ -71,10 +71,12 @@ class UpdateCSVDataSourceGenres:
 """
             header_string = ""
             for column in header:
-                header_string += f"{self.convert_column_name(column)},"
+                if column != "id":
+                    header_string += f"{self.convert_column_name(column)},"
             header_string = header_string.rstrip(",")
             insert_query_string = ""
             for row in reader:
+                row.pop(0)
                 values = ", ".join(f"'{self.replace_apostrophe(value)}'" if "'" in value else f"'{value}'" for value in row)
                 insert_query_string += f"INSERT INTO {table_name} ({header_string}) VALUES ({values})\n"
             add_fk = ""
@@ -101,7 +103,7 @@ class UpdateCSVDataSourceGenres:
                     table_value_queries+=f"\t\t\t\t{column} bit,\n"
                 case int():
                     if column == "id":
-                        table_value_queries+=f"\t\t\t\t{column} int NOT NULL,\n"
+                        table_value_queries+=f"\t\t\t\t{column} int IDENTITY(0,1) PRIMARY KEY,\n"
                     else:
                         table_value_queries+=f"\t\t\t\t{column} int,\n"
                 case float():
@@ -109,10 +111,13 @@ class UpdateCSVDataSourceGenres:
                 case datetime():
                     table_value_queries+=f"\t\t\t\t{column} date,\n"
                 case str():
-                    table_value_queries += f"\t\t\t\t{column} varchar(255),\n"
+                    if column=="playlist_name" or column=="genre":
+                        table_value_queries += f"\t\t\t\t{column} varchar(255) NOT NULL,\n"
+                    else:
+                        table_value_queries += f"\t\t\t\t{column} varchar(255),\n"
                 case _:
                     table_value_queries += f"\t\t\t\t{column} varchar(255),\n" 
-        table_value_queries += "\t\t\t\tPRIMARY KEY (id)\n"
+        # table_value_queries += "\t\t\t\tPRIMARY KEY (id)\n"
         return table_value_queries
         
     def join_sql_table_to_genre(self, table, key, referenceTable, referenceTableKey):
@@ -133,5 +138,8 @@ REFERENCES {referenceTable}({referenceTableKey})"""
     def replace_apostrophe(self, string):
         """Replace apostrophe's for insert sql statements"""
         return str(string).replace("'", "''")
+    
+    def write_db_to_model(self):
+        """Writes the database tables to individual models"""
         
 UpdateCSVDataSourceGenres()

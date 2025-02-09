@@ -2,15 +2,37 @@ from flask import Flask
 from flask_restful import Api
 from flask_cors import CORS, cross_origin
 from Resources.sad_playlist_resource import SadPlaylistResource
-from Resources.users_resource import UsersResource
-from Resources.locations_resource import LocationsResource
+from flask_sqlalchemy import SQLAlchemy
+from Utility.model_generator import ModelGenerator
+from Resources.dynamic_resource import DynamicResource
 
 app = Flask(__name__)
+app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://DESKTOP-LOBD6GT\\SQLEXPRESS/PlaylistPitcher?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes'
+db = SQLAlchemy(app)
 api = Api(app)
 
 #api.add_resource(UsersResource, '/users')
-api.add_resource(SadPlaylistResource, '/sad-playlists')
-api.add_resource(LocationsResource, '/locations')
+#api.add_resource(SadPlaylistResource, '/sad-playlists')
+#api.add_resource(LocationsResource, '/locations')
+
+# Generate models for all tables
+with app.app_context():
+    generated_models = ModelGenerator(db=db).models
+
+# Dictionary to store dynamically created resource classes
+dynamic_resources = {}
+
+# Function to dynamically create and add resources for each model
+def add_resource_for_model(model, endpoint_name):
+    resource_class = type(f"{endpoint_name}Resource", (DynamicResource,), {
+        '__init__': lambda self: DynamicResource.__init__(self, model, db=db)
+    })
+    dynamic_resources[endpoint_name] = resource_class
+    api.add_resource(resource_class, f'/{endpoint_name}', f'/{endpoint_name}/<int:item_id>')
+
+# Adding resources dynamically for all tables
+for table_name, model in generated_models.items():
+    add_resource_for_model(model, table_name)
 
 @app.after_request
 
