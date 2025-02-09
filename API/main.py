@@ -1,7 +1,6 @@
 from flask import Flask
 from flask_restful import Api
 from flask_cors import CORS, cross_origin
-from Resources.sad_playlist_resource import SadPlaylistResource
 from flask_sqlalchemy import SQLAlchemy
 from Utility.model_generator import ModelGenerator
 from Resources.dynamic_resource import DynamicResource
@@ -10,10 +9,6 @@ app = Flask(__name__)
 app.config['SQLALCHEMY_DATABASE_URI'] = 'mssql+pyodbc://DESKTOP-LOBD6GT\\SQLEXPRESS/PlaylistPitcher?driver=ODBC+Driver+17+for+SQL+Server&trusted_connection=yes'
 db = SQLAlchemy(app)
 api = Api(app)
-
-#api.add_resource(UsersResource, '/users')
-#api.add_resource(SadPlaylistResource, '/sad-playlists')
-#api.add_resource(LocationsResource, '/locations')
 
 # Generate models for all tables
 with app.app_context():

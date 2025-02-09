@@ -2,7 +2,7 @@ import { useForm, Controller } from "react-hook-form"
 import TextField from '@mui/material/TextField';
 import Select from '@mui/material/Select';
 import { FormControl, InputLabel, MenuItem } from "@mui/material";
-import { PlatlistGenre } from "../enum/playlist-genre.js";
+import { getPlaylistGenres as PlatlistGenre } from "../enum/playlist-genre.js";
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Typography from '@mui/material/Typography';

@@ -19,10 +19,10 @@ class PlaylistPage extends Component {
   }
 
   fetchData() {
-    const { id } = this.props;
+    const { tableName } = this.props;
     this.setState({ isLoaded: true });
 
-    axios.get(`http://127.0.0.1:5000/playlist/${id}`)
+    axios.get(`http://127.0.0.1:5000/${tableName}`)
       .then(response => {
         this.setState({
           data: response.data,

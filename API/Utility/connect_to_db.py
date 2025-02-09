@@ -9,7 +9,6 @@ class ConnectToDB:
         self.connection = None
         self.cursor = None
         self.establish_connection()
-        #self.test_connection()
 
         
     def establish_connection(self):
@@ -42,9 +41,3 @@ class ConnectToDB:
         """Close the connection to the server."""
         self.connection.close()
         
-#DESKTOP-LOBD6GT\SQLEXPRESS
-# user_input_server = input("Please enter server name: ")
-#PlaylistPitcher
-# user_input_db = input("Please input database name: ")
-
-# ConnectToDB(user_input_server,user_input_db)
